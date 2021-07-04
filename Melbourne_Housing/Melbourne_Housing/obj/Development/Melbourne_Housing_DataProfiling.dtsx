@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/8/2021 11:14:02 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-BM6KUR1"
+  DTS:CreatorName="DESKTOP-BM6KUR1\PL 62 7RC"
+  DTS:DTSID="{5461855D-D534-4D7F-AF77-1BD2E257A70B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Melbourne_Housing_DataProfiling"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{F4380A8A-F82F-4AE0-B8C3-28FB86DCB474}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{D3153FE8-F92B-44B3-8306-BEADFD80DB98}"
+      DTS:ObjectName="DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-BM6KUR1\MSSQLSERVER_DWBI;User ID=sqlServer;Initial Catalog=Melbourne_Housing_Staging;Application Name=SSIS-Melbourne_Housing_DataProfiling-{D3153FE8-F92B-44B3-8306-BEADFD80DB98}DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzCwlby6BZ0OimPDmVFSBsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAKH9QJp4Gkhz3H5yIWOgdNMernujVK3pSKnNG8Y1fYCQAAAAAOgAAAAAIAACAAAADaBpABUKTdky6SN5bG3XvvES9v/8j7SzS2Yq6clfaCdRAAAABfzch9TsQ+Z+XlaPS/SmQzQAAAAE3t08rSWd7NMh5v96r/+zlPjpq1FDNiAFdYerHQAfde6K6BIupAZTCyNuNCiFBi0lrk9tDU/BtP46TzMaBZmec</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{BC49C078-2C5E-4EB2-A3A6-836333A31402}"
+      DTS:ObjectName="DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-BM6KUR1\MSSQLSERVER_DWBI;User ID=sqlServer;Initial Catalog=Melbourne_Housing_Staging;Application Name=SSIS-Melbourne_Housing_DataProfiling-{BC49C078-2C5E-4EB2-A3A6-836333A31402}DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzCwlby6BZ0OimPDmVFSBsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD+vKJ4zoTPfyWtlcx/Vi32cgU87UlhMx/cBP+9qIf9rAAAAAAOgAAAAAIAACAAAAD/7qmMs5gTxSO9Lh4ciyKC5V98XXdfs5TIKaAXKKo0dBAAAAA1JRCTU+1Mh9l2ehxqK2YkQAAAAAUoQs8h0QAYBZodMB7X9fo7PJnV7xKPGUTLTFjKDca4FPf9FzPh62c/4p5asYZ88/vO7myYqOO3NNr9z0gCpn4</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{5583D06E-51C2-494A-BEF5-D9D6637EB173}"
+      DTS:ObjectName="DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-BM6KUR1\MSSQLSERVER_DWBI;User ID=sqlServer;Initial Catalog=Melbourne_Housing_Staging;Application Name=SSIS-Melbourne_Housing_DataProfiling-{5583D06E-51C2-494A-BEF5-D9D6637EB173}DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzCwlby6BZ0OimPDmVFSBsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB+cddIfrqPsf0nNi3ciERAM5Q9Vagehxwte56TPDX3vgAAAAAOgAAAAAIAACAAAADCki1gHAnSNGDwGwDZGejc9OAQbQnBsKGD4jL1G2SgiBAAAACPbQjrQNjTdJep2uciB9WyQAAAAIFETIkF8lA3RMYL8PM0wlofoAb8HwD8V8fBnYwiyCVcy5Ox6M8xP2TO4MXv8iGjKtVj3Am95/HH41G9BhdUajE</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{38878456-3835-443F-8EF7-ABF1808A0E9D}"
+      DTS:ObjectName="DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-BM6KUR1\MSSQLSERVER_DWBI;User ID=sqlServer;Initial Catalog=Melbourne_Housing_Staging;Application Name=SSIS-Melbourne_Housing_DataProfiling-{38878456-3835-443F-8EF7-ABF1808A0E9D}DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzCwlby6BZ0OimPDmVFSBsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA8P/IKAcQB2YkLtyIMfOpRB2UJKsnqNBsnO2KFHztUyQAAAAAOgAAAAAIAACAAAACDuEc+emMRpI1HIsBjY5bsjG7C0h0/KiBu8ceXvm5zYRAAAADW4MrlJCv0/9YqMX4iPxlGQAAAAP1qmvL1c/AnIoNzTPtrE4w6a/Xip47xNw6CKq2Ttc2Nj1QRCG/N1tQNu/EKvVWlZ9CM8ymKBtixAXsvLleTaAs</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Property_Data_profiling]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{2A30D4E3-E723-48C4-BA42-EC379B557053}"
+      DTS:ObjectName="Property_Data_profiling">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="E:\DWBI\Data profiling\Property_Data_profiling" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Seller_Details_Data_profiling]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{B9DE044D-BE1D-4C81-A43A-49D73E719317}"
+      DTS:ObjectName="Seller_Details_Data_profiling">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="E:\DWBI\Data profiling\Seller_Details_Data_profiling" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Profiling Task_Property"
+      DTS:CreationName="Microsoft.DataProfilingTask"
+      DTS:Description="Data Profiling Task"
+      DTS:DTSID="{52871BAE-5A88-4F0C-B783-E34DFBAD7762}"
+      DTS:ExecutableType="Microsoft.DataProfilingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Profiling Task_Property"
+      DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2016; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <DataProfilingTaskData
+          Destination="Property_Data_profiling">
+          <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{BC49C078-2C5E-4EB2-A3A6-836333A31402}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{BC49C078-2C5E-4EB2-A3A6-836333A31402}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{BC49C078-2C5E-4EB2-A3A6-836333A31402}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{BC49C078-2C5E-4EB2-A3A6-836333A31402}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq">
+        <DataSourceID>{BC49C078-2C5E-4EB2-A3A6-836333A31402}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{BC49C078-2C5E-4EB2-A3A6-836333A31402}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq">
+        <DataSourceID>{BC49C078-2C5E-4EB2-A3A6-836333A31402}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq1">
+        <DataSourceID>{5583D06E-51C2-494A-BEF5-D9D6637EB173}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq1">
+        <DataSourceID>{5583D06E-51C2-494A-BEF5-D9D6637EB173}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq1">
+        <DataSourceID>{5583D06E-51C2-494A-BEF5-D9D6637EB173}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq1">
+        <DataSourceID>{5583D06E-51C2-494A-BEF5-D9D6637EB173}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq1">
+        <DataSourceID>{5583D06E-51C2-494A-BEF5-D9D6637EB173}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq1">
+        <DataSourceID>{5583D06E-51C2-494A-BEF5-D9D6637EB173}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq1">
+        <DataSourceID>{5583D06E-51C2-494A-BEF5-D9D6637EB173}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq2">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq2">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq2">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq2">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq2">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq2">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq2">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="Property" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+        </DataProfilingTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Profiling Task_SellerDetails"
+      DTS:CreationName="Microsoft.DataProfilingTask"
+      DTS:Description="Data Profiling Task"
+      DTS:DTSID="{39CA0B5A-79D3-4630-B6DE-2C60DE1CAB77}"
+      DTS:ExecutableType="Microsoft.DataProfilingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Profiling Task_SellerDetails"
+      DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2016; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <DataProfilingTaskData
+          Destination="Seller_Details_Data_profiling">
+          <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{D3153FE8-F92B-44B3-8306-BEADFD80DB98}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{D3153FE8-F92B-44B3-8306-BEADFD80DB98}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{D3153FE8-F92B-44B3-8306-BEADFD80DB98}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{D3153FE8-F92B-44B3-8306-BEADFD80DB98}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq">
+        <DataSourceID>{D3153FE8-F92B-44B3-8306-BEADFD80DB98}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{D3153FE8-F92B-44B3-8306-BEADFD80DB98}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq">
+        <DataSourceID>{D3153FE8-F92B-44B3-8306-BEADFD80DB98}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq1">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq1">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq1">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq1">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq1">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq1">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq1">
+        <DataSourceID>{38878456-3835-443F-8EF7-ABF1808A0E9D}</DataSourceID>
+        <Table Schema="dbo" Table="SellerDetails" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+        </DataProfilingTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{46E6C1B1-0A8E-40EA-91C1-C115C38B34CC}"
+      DTS:From="Package\Data Profiling Task_Property"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Data Profiling Task_SellerDetails" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="212.8,41.6"
+          Id="Package\Data Profiling Task_Property"
+          TopLeft="231.428575369776,40.9882358689622" />
+        <NodeLayout
+          Size="230.4,41.6"
+          Id="Package\Data Profiling Task_SellerDetails"
+          TopLeft="230.285718207457,136.423531325053" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="341.657146788617,82.588235868962">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53.8352954560908"
+              Start="0,0"
+              End="0,46.3352954560908">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.3352954560908" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

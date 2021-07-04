@@ -1,0 +1,1725 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/8/2021 1:34:00 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-BM6KUR1"
+  DTS:CreatorName="DESKTOP-BM6KUR1\PL 62 7RC"
+  DTS:DTSID="{696EBB11-ECF4-4075-98B4-55F8DAE798D5}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Melbourne_Housing_Staging"
+  DTS:PackageType="5"
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{155ED986-E18D-4C05-93F3-64245FB11754}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Source.sqlServer]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2C52A873-24AA-44B2-BBBB-A4DAB8A04CDA}"
+      DTS:ObjectName="DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Source.sqlServer">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-BM6KUR1\MSSQLSERVER_DWBI;User ID=sqlServer;Initial Catalog=Melbourne_Housing_Source;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzCwlby6BZ0OimPDmVFSBsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAChMI9Ue0DwpfPqUl8qTjTLB9R5lDe/v/2iusz18hVDFQAAAAAOgAAAAAIAACAAAAA3mM5d8kYL/IUZHKwYkAMan6/VPaKEmGOw59zoaeIi+hAAAABUsaHDgV1FkwwO00bm3Dl6QAAAAAL/J8LvhAPLBQCre/Sy33Nz/qafgs16U2lI2oKQ5WZeBlXQjR3WsikvSYsOzGc/PAp4t8KB7XbgqW6YweFd0mI</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Source.sqlServer 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{91CE90F8-AFD4-4B96-8135-568D9D33BBD6}"
+      DTS:ObjectName="DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Source.sqlServer 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-BM6KUR1\MSSQLSERVER_DWBI;User ID=sqlServer;Initial Catalog=Melbourne_Housing_Source;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzCwlby6BZ0OimPDmVFSBsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABBfAwEZWM5dgucZ+wmLhkJyU7Q0cQCmTI3wwzxeZdMmAAAAAAOgAAAAAIAACAAAADACg4pDzL4yRNkH6dpZnOacddsYAtNW6J2MEpoIz2P1BAAAADzGNq0SEXNbH4or8WanWKcQAAAACZZy+APaONW7xMqtAQO729NlFGEQNuW6Q1Y7c/1VSALaj4eNJ9aj5yVty87aX4K+pqH0zXlkCO0fwBvgTs6I5s</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E66AD21F-632A-45F9-A96D-E9054259CBFB}"
+      DTS:ObjectName="DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-BM6KUR1\MSSQLSERVER_DWBI;User ID=sqlServer;Initial Catalog=Melbourne_Housing_Staging;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzCwlby6BZ0OimPDmVFSBsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADp8p7SMD/5cdmDH6Eef30Cq2HOHuG0X/4aYewtwIJimwAAAAAOgAAAAAIAACAAAAAjZX4CfQEzBPnyghs66gLo3H138HnTb69i2BemmZ7NQRAAAAAh7C6PSfdPE9zGs0i99gH6QAAAAN8fUZEZlXa7mEknXKLFCVyoyH17Yj9yigvUiM5psZ00SSv+XUXgk2A0tghJgxK6VqbNiuNhNSkc6w+GY/JVG+Y</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CEBD2F72-1EB3-4862-9A7B-3D2573465D36}"
+      DTS:ObjectName="DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-BM6KUR1\MSSQLSERVER_DWBI;User ID=sqlServer;Initial Catalog=Melbourne_Housing_Staging;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzCwlby6BZ0OimPDmVFSBsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD+DYVgx9ERUttP0tpKrO92NX1Rm5cuMQ5itvNH5gJrMgAAAAAOgAAAAAIAACAAAADaqYCyY/8a06MNRDuix5GDjl2YC2cUU0LWIMHGfdGW3hAAAABLOYM5U+3BwElOLOcpi+xoQAAAAABEu0CcnPLpKCcG9tbTAyfCOBdlLErqPlvMoWbMYtuQVrMuTvTz6DTzhsPPsrh08okSI2tILLM0WP1VBoRN8Pw</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7CA20C25-ABC0-4218-8CCF-947E39B239BA}"
+      DTS:ObjectName="DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-BM6KUR1\MSSQLSERVER_DWBI;User ID=sqlServer;Initial Catalog=Melbourne_Housing_Staging;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzCwlby6BZ0OimPDmVFSBsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADgQK11e+N8KGlbV3LbmchYzqhGczg42IttKqLiaSUUEAAAAAAOgAAAAAIAACAAAAApTo4OAxvgzrVuoVtbQ6KJcApY5P2AKFjcrBu5HFSmqBAAAACcpTlnOzeWjXeEXdL9dFx4QAAAAHE46CNWlvR7qoSBkzTvZPntFHAcRCchnIAGn54wnF67fWnFyTQ/83Mrbi45TXjk/qst7dk//eRqm1gxWLmp6bY</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{9FDC3541-88AC-418C-9CAA-8B7C8687332F}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\DWBI\Property.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{4A785877-1FE5-4DB4-BD1A-EEE0771A766B}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\DWBI\Property.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{46DEA6F5-C611-400A-BEC6-F79D5F864E5D}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\DWBI\Property.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{E7BAFBB9-C979-4C5E-AF33-10A4EE6A220B}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\DWBI\Property.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{9E7A0E62-8B7B-4226-9759-C3B695DF3918}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\DWBI\Property_Details.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{5FB06DD1-7B92-46BF-A72D-C8759749C198}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\DWBI\Property_Details.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 6]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{505D4207-F943-4444-AFD9-F9AA05A9A65B}"
+      DTS:ObjectName="Excel Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\DWBI\Property_Details.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Property.xlsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{382AC899-E2D7-4124-80FF-4E29163CB06C}"
+      DTS:ObjectName="Property.xlsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="E:\DWBI\Property.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Lord_Property_to_Staging"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{FBB4DF5E-FF24-484D-97C4-2C9A2D046971}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Lord_Property_to_Staging"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\Lord_Property_to_Staging.EventHandlers[OnPreExecute]"
+          DTS:CreationName="OnPreExecute"
+          DTS:DTSID="{8F35A760-D831-4DA7-A500-08832587B837}"
+          DTS:EventID="0"
+          DTS:EventName="OnPreExecute"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{F3205B87-30FD-4986-B5D9-B672BCF16A1B}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Lord_Property_to_Staging.EventHandlers[OnPreExecute]\Truncate_Property_Staging_Table"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{A2D31278-264E-43D7-9F0F-9D4AB6B835F8}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Truncate_Property_Staging_Table"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{E66AD21F-632A-45F9-A96D-E9054259CBFB}"
+                  SQLTask:SqlStatementSource="truncate table dbo.Property" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Lord_Property_to_Staging\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Property$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Lord_Property_to_Staging\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 6]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 6]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[property_id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[property_id]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[property_id]"
+                      name="property_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Suburb]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Suburb]"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Suburb]"
+                      name="Suburb"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Address]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Address]"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Address]"
+                      name="Address"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Rooms]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Rooms]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Rooms]"
+                      name="Rooms"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Type]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Type]"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Type]"
+                      name="Type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Price]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Price]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Price]"
+                      name="Price"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Method]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Method]"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Method]"
+                      name="Method"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Date]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Distance]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Distance]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Distance]"
+                      name="Distance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Postcode]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Postcode]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Postcode]"
+                      name="Postcode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Bedroom]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Bedroom]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Bedroom]"
+                      name="Bedroom"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Bathroom]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Bathroom]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Bathroom]"
+                      name="Bathroom"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Car]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Car]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Car]"
+                      name="Car"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Landsize]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Landsize]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Landsize]"
+                      name="Landsize"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[BuildingArea]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[BuildingArea]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[BuildingArea]"
+                      name="BuildingArea"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[CouncilArea]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[CouncilArea]"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[CouncilArea]"
+                      name="CouncilArea"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Lattitude]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Lattitude]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Lattitude]"
+                      name="Lattitude"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Longtitude]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Longtitude]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Longtitude]"
+                      name="Longtitude"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Regionname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Regionname]"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Regionname]"
+                      name="Regionname"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Assessment_Tax]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Assessment_Tax]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Assessment_Tax]"
+                      name="Assessment_Tax"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Broker_cost]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Broker_cost]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Broker_cost]"
+                      name="Broker_cost"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Insurance_cost]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Insurance_cost]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Insurance_cost]"
+                      name="Insurance_cost"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Seller_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Seller_ID]"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Seller_ID]"
+                      name="Seller_ID"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[property_id]"
+                      dataType="r8"
+                      name="property_id" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Suburb]"
+                      dataType="wstr"
+                      length="255"
+                      name="Suburb" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Address]"
+                      dataType="wstr"
+                      length="255"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Rooms]"
+                      dataType="r8"
+                      name="Rooms" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Type]"
+                      dataType="wstr"
+                      length="255"
+                      name="Type" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Price]"
+                      dataType="r8"
+                      name="Price" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Method]"
+                      dataType="wstr"
+                      length="255"
+                      name="Method" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Date]"
+                      dataType="date"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Distance]"
+                      dataType="r8"
+                      name="Distance" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Postcode]"
+                      dataType="r8"
+                      name="Postcode" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Bedroom]"
+                      dataType="r8"
+                      name="Bedroom" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Bathroom]"
+                      dataType="r8"
+                      name="Bathroom" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Car]"
+                      dataType="r8"
+                      name="Car" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Landsize]"
+                      dataType="r8"
+                      name="Landsize" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[BuildingArea]"
+                      dataType="r8"
+                      name="BuildingArea" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[CouncilArea]"
+                      dataType="wstr"
+                      length="255"
+                      name="CouncilArea" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Lattitude]"
+                      dataType="r8"
+                      name="Lattitude" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Longtitude]"
+                      dataType="r8"
+                      name="Longtitude" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Regionname]"
+                      dataType="wstr"
+                      length="255"
+                      name="Regionname" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Assessment_Tax]"
+                      dataType="r8"
+                      name="Assessment_Tax" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Broker_cost]"
+                      dataType="r8"
+                      name="Broker_cost" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Insurance_cost]"
+                      dataType="r8"
+                      name="Insurance_cost" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].ExternalColumns[Seller_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Seller_ID" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[property_id]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[property_id]"
+                      name="property_id" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Suburb]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Suburb]"
+                      name="Suburb" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Address]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Address]"
+                      name="Address" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Rooms]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Rooms]"
+                      name="Rooms" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Type]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Type]"
+                      name="Type" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Price]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Price]"
+                      name="Price" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Method]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Method]"
+                      name="Method" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Date]"
+                      dataType="date"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Distance]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Distance]"
+                      name="Distance" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Postcode]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Postcode]"
+                      name="Postcode" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Bedroom]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Bedroom]"
+                      name="Bedroom" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Bathroom]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Bathroom]"
+                      name="Bathroom" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Car]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Car]"
+                      name="Car" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Landsize]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Landsize]"
+                      name="Landsize" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[BuildingArea]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[BuildingArea]"
+                      name="BuildingArea" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[CouncilArea]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[CouncilArea]"
+                      name="CouncilArea" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Lattitude]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Lattitude]"
+                      name="Lattitude" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Longtitude]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Longtitude]"
+                      name="Longtitude" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Regionname]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Regionname]"
+                      name="Regionname" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Assessment_Tax]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Assessment_Tax]"
+                      name="Assessment_Tax" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Broker_cost]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Broker_cost]"
+                      name="Broker_cost" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Insurance_cost]"
+                      dataType="r8"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Insurance_cost]"
+                      name="Insurance_cost" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Seller_ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[Seller_ID]"
+                      name="Seller_ID" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Lord_Property_to_Staging\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Property]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Lord_Property_to_Staging\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[property_id]"
+                      cachedDataType="r8"
+                      cachedName="property_id"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[property_id]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[property_id]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Suburb]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Suburb"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Suburb]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Suburb]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Address]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Address]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Rooms]"
+                      cachedDataType="r8"
+                      cachedName="Rooms"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rooms]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Rooms]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Type]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Type"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Type]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Price]"
+                      cachedDataType="r8"
+                      cachedName="Price"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Price]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Method]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Method"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Method]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Method]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
+                      cachedDataType="date"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Distance]"
+                      cachedDataType="r8"
+                      cachedName="Distance"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Distance]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Distance]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Postcode]"
+                      cachedDataType="r8"
+                      cachedName="Postcode"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Postcode]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Postcode]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Bedroom]"
+                      cachedDataType="r8"
+                      cachedName="Bedroom"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Bedroom]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Bedroom]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Bathroom]"
+                      cachedDataType="r8"
+                      cachedName="Bathroom"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Bathroom]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Bathroom]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Car]"
+                      cachedDataType="r8"
+                      cachedName="Car"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Car]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Car]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Landsize]"
+                      cachedDataType="r8"
+                      cachedName="Landsize"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Landsize]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Landsize]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BuildingArea]"
+                      cachedDataType="r8"
+                      cachedName="BuildingArea"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BuildingArea]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[BuildingArea]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CouncilArea]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CouncilArea"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CouncilArea]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[CouncilArea]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Lattitude]"
+                      cachedDataType="r8"
+                      cachedName="Lattitude"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Lattitude]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Lattitude]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Longtitude]"
+                      cachedDataType="r8"
+                      cachedName="Longtitude"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Longtitude]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Longtitude]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Regionname]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Regionname"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Regionname]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Regionname]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Assessment_Tax]"
+                      cachedDataType="r8"
+                      cachedName="Assessment_Tax"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Assessment_Tax]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Assessment_Tax]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Broker_cost]"
+                      cachedDataType="r8"
+                      cachedName="Broker_cost"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Broker_cost]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Broker_cost]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Insurance_cost]"
+                      cachedDataType="r8"
+                      cachedName="Insurance_cost"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_cost]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Insurance_cost]" />
+                    <inputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Seller_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Seller_ID"
+                      externalMetadataColumnId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Seller_ID]"
+                      lineageId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output].Columns[Seller_ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[property_id]"
+                      dataType="i4"
+                      name="property_id" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Suburb]"
+                      dataType="wstr"
+                      length="255"
+                      name="Suburb" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
+                      dataType="wstr"
+                      length="255"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rooms]"
+                      dataType="i4"
+                      name="Rooms" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                      dataType="wstr"
+                      length="255"
+                      name="Type" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
+                      dataType="r8"
+                      name="Price" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Method]"
+                      dataType="wstr"
+                      length="255"
+                      name="Method" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      dataType="dbTimeStamp"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Distance]"
+                      dataType="r8"
+                      name="Distance" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Postcode]"
+                      dataType="i4"
+                      name="Postcode" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Bedroom]"
+                      dataType="i4"
+                      name="Bedroom" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Bathroom]"
+                      dataType="i4"
+                      name="Bathroom" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Car]"
+                      dataType="i4"
+                      name="Car" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Landsize]"
+                      dataType="i4"
+                      name="Landsize" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BuildingArea]"
+                      dataType="i4"
+                      name="BuildingArea" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CouncilArea]"
+                      dataType="wstr"
+                      length="255"
+                      name="CouncilArea" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Lattitude]"
+                      dataType="r8"
+                      name="Lattitude" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Longtitude]"
+                      dataType="r8"
+                      name="Longtitude" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Regionname]"
+                      dataType="wstr"
+                      length="255"
+                      name="Regionname" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Assessment_Tax]"
+                      dataType="r8"
+                      name="Assessment_Tax" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Broker_cost]"
+                      dataType="r8"
+                      name="Broker_cost" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_cost]"
+                      dataType="r8"
+                      name="Insurance_cost" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Seller_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Seller_ID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Lord_Property_to_Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Lord_Property_to_Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Lord_Property_to_Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Lord_Property_to_Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Lord_Property_to_Staging.Paths[Excel Source Output]"
+              endId="Package\Lord_Property_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Lord_Property_to_Staging\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Lord_SellerDetails_to_Staging"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F103FF71-2507-4527-AC76-B59E144833FD}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Lord_SellerDetails_to_Staging"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\Lord_SellerDetails_to_Staging.EventHandlers[OnPreExecute]"
+          DTS:CreationName="OnPreExecute"
+          DTS:DTSID="{B640AEFB-4791-4D6C-B4AF-2DA17DE619C0}"
+          DTS:EventID="0"
+          DTS:EventName="OnPreExecute"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{127FD95B-7DB7-4C8F-A961-A46E1707FEEC}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Lord_SellerDetails_to_Staging.EventHandlers[OnPreExecute]\Truncate_Property_Seller_Table"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{1A5476FA-5142-4280-9AC7-689EA3D434AC}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Truncate_Property_Seller_Table"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{E66AD21F-632A-45F9-A96D-E9054259CBFB}"
+                  SQLTask:SqlStatementSource="truncate table dbo.SellerDetails" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[SellerDetails]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Staging.sqlServer 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Seller_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Seller_ID"
+                      externalMetadataColumnId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Seller_ID]"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Seller_ID]" />
+                    <inputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Seller_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Seller_Name"
+                      externalMetadataColumnId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Seller_Name]"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Seller_Name]" />
+                    <inputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Seller_TP]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Seller_TP"
+                      externalMetadataColumnId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Seller_TP]"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Seller_TP]" />
+                    <inputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Address]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Address]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Seller_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Seller_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Seller_Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Seller_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Seller_TP]"
+                      dataType="wstr"
+                      length="255"
+                      name="Seller_TP" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
+                      dataType="wstr"
+                      length="255"
+                      name="Address" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Seller]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Source.sqlServer 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-BM6KUR1\MSSQLSERVER_DWBI.Melbourne_Housing_Source.sqlServer 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Seller_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Seller_ID]"
+                      length="255"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Seller_ID]"
+                      name="Seller_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Seller_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Seller_Name]"
+                      length="255"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Seller_Name]"
+                      name="Seller_Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Seller_TP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Seller_TP]"
+                      length="255"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Seller_TP]"
+                      name="Seller_TP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Address]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                      length="255"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Address]"
+                      name="Address"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Seller_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Seller_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Seller_Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Seller_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Seller_TP]"
+                      dataType="wstr"
+                      length="255"
+                      name="Seller_TP" />
+                    <externalMetadataColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                      dataType="wstr"
+                      length="255"
+                      name="Address" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Seller_ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Seller_ID]"
+                      name="Seller_ID" />
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Seller_Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Seller_Name]"
+                      name="Seller_Name" />
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Seller_TP]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Seller_TP]"
+                      name="Seller_TP" />
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Address]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Address]"
+                      name="Address" />
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Lord_SellerDetails_to_Staging.Paths[OLE DB Source Output]"
+              endId="Package\Lord_SellerDetails_to_Staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Lord_SellerDetails_to_Staging\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{AE1EB05D-9B13-41F6-81BF-4C9C7CB43FB1}"
+      DTS:From="Package\Lord_SellerDetails_to_Staging"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Lord_Property_to_Staging" />
+  </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{5DFAA3B0-6BB4-4628-8D92-019185914671}"
+      DTS:EventID="0"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{47AC00B6-601C-4C51-B772-70E31B02985A}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables />
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="200.8,41.6"
+          Id="Package\Lord_Property_to_Staging"
+          TopLeft="242.285718411816,105.223530887485" />
+        <NodeLayout
+          Size="219.2,41.6"
+          Id="Package\Lord_SellerDetails_to_Staging"
+          TopLeft="232.571432532097,36.7058828677272" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="342.428575471956,78.3058828677271">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.9176480197577"
+              Start="0,0"
+              End="0,19.4176480197577">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.4176480197577" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Lord_Property_to_Staging">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Lord_Property_to_Staging\Excel Source"
+          TopLeft="399.4285782308,118.682354605652" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Lord_Property_to_Staging\OLE DB Destination"
+          TopLeft="390.642863701801,237.358826781144" />
+        <EdgeLayout
+          Id="Package\Lord_Property_to_Staging.Paths[Excel Source Output]"
+          TopLeft="472.2357209663,160.282354605652">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77.0764721754917"
+              Start="0,0"
+              End="0,69.5764721754917">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.5764721754917" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Lord_Property_to_Staging.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="238.4,41.6"
+          Id="Package\Lord_Property_to_Staging.EventHandlers[OnPreExecute]\Truncate_Property_Staging_Table"
+          TopLeft="500.8,93.6" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Lord_Property_to_Staging\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Lord_Property_to_Staging\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Lord_SellerDetails_to_Staging">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Lord_SellerDetails_to_Staging\OLE DB Source"
+          TopLeft="499.2,92.8" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Lord_SellerDetails_to_Staging\OLE DB Destination"
+          TopLeft="486.4,229.6" />
+        <EdgeLayout
+          Id="Package\Lord_SellerDetails_to_Staging.Paths[OLE DB Source Output]"
+          TopLeft="572.8,134.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,95.2"
+              Start="0,0"
+              End="0,87.7">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,87.7" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Lord_SellerDetails_to_Staging.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="228.8,41.6"
+          Id="Package\Lord_SellerDetails_to_Staging.EventHandlers[OnPreExecute]\Truncate_Property_Seller_Table"
+          TopLeft="596.8,81.6" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Lord_SellerDetails_to_Staging\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Lord_SellerDetails_to_Staging\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
